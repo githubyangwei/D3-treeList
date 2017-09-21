@@ -1,13 +1,33 @@
 <!doctype html>
-<html lang="cn">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
+	<meta charset="UTF-8">
+	<title>基础</title>
+	 <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<link rel="stylesheet" href="../resources/layui/css/layui.css">
+	<link rel="stylesheet" href="../resources/css/global.css">
 </head>
 <body>
-
+<ul class="layui-nav" lay-filter="">
+	<li class="layui-nav-item"><a href="">基础</a></li>
+	<li class="layui-nav-item">
+		<a href="javascript:;">扩展</a>
+		<dl class="layui-nav-child"> <!-- 二级菜单 -->
+			<dd><a href="">列表</a></dd>
+			<dd><a href="">缩放</a></dd>
+			<dd><a href="">点击事件</a></dd>
+			<dd><a href="">树图</a></dd>
+		</dl>
+	</li>
+</ul>
 </body>
+<script type="application/javascript" src="../resources/layui/layui.js"></script>
+<script type="application/javascript" src="../resources/js/d3Action.js"></script>
+<script type="application/javascript">
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+</script>
 </html>
